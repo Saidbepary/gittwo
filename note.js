@@ -40,6 +40,119 @@ let obj1={
     }
 }
 console.log(obj.print())
-let arr=[12,44,76]
+let arr=[12,44,76,33,55]
 let y=arr[Symbol.iterator]()
 console.log(y)
+// let list={
+//     start:23,
+//     end:30,
+// [Symbol.iterator]:function(){
+//     let currentvalue=this.start
+//     let self=this.end
+//     return{
+//         next(){
+//             return {
+//                 done:currentvalue>self,
+//                 value :currentvalue>self? undefined:currentvalue++
+//             }
+//         }
+       
+//     }
+
+// }
+
+// }
+// let got=list[Symbol.iterator]()
+
+console.log(got.next())
+console.log(got.next())
+console.log(got.next())
+console.log(got.next())
+console.log(got.next())
+console.log(got.next())
+console.log(got.next())
+
+let result=y.next()
+while(!result.done){
+    if(result.value==44){
+        console.log(" ")
+
+    // result=y.next()
+    }else{
+        console.log(result.value)  
+       //result=y.next()
+      }
+    // console.log(result.value)
+     result=y.next()
+}
+// for(let v of list){
+//     console.log(v)
+// }
+//
+function iter(arr1){
+    let num=0;
+    return{
+        next(){
+            
+            if(num < arr1.length){
+             return  {value:arr1[num++],
+                done:false}
+            }else{return{
+              done:true}
+             }
+            }
+        
+   }
+}
+let newnum=iter(arr)
+console.log(newnum.next())
+console.log(newnum.next())
+console.log(newnum.next())
+console.log(newnum.next())
+console.log(newnum.next())
+// let raw={
+//     a:'abir',
+//     b:'arif'
+//     hobby:['cricket','footbal']
+//     [Symbol.iterator]:function(){
+//         let i=0;
+//         let hob=this.hobby;
+//         return {
+//             next1(){
+//                 let value=hob[i];
+//                 i++;
+
+//                 return{
+// done:i> hob.length? true:false,
+// value:value
+//                 }
+//             }
+//         }
+//     }
+
+// }
+// let e=raw[Symbol.iterator]()
+// console.log(e)
+// for(let hobby of raw){
+//     console.log(hobby)
+// }
+let list={
+    start:23,
+    end:30,
+[Symbol.iterator]:function(){
+    
+    
+    next:()=>{
+            
+                done=this.start>this.end,
+                value = this.start>this.end? undefined:start++
+        
+        
+    }
+ let next1=next()
+}
+}
+
+
+let got=list[Symbol.iterator]()
+console.log(next(got.Symbol))
