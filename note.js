@@ -64,13 +64,13 @@ console.log(y)
 // }
 // let got=list[Symbol.iterator]()
 
-console.log(got.next())
-console.log(got.next())
-console.log(got.next())
-console.log(got.next())
-console.log(got.next())
-console.log(got.next())
-console.log(got.next())
+// console.log(got.next())
+// console.log(got.next())
+// console.log(got.next())
+// console.log(got.next())
+// console.log(got.next())
+// console.log(got.next())
+// console.log(got.next())
 
 let result=y.next()
 while(!result.done){
@@ -136,23 +136,23 @@ console.log(newnum.next())
 // for(let hobby of raw){
 //     console.log(hobby)
 // }
-let list={
-    start:23,
-    end:30,
-[Symbol.iterator]:function(){
+// let list={
+//     start:23,
+//     end:30,
+// [Symbol.iterator]:function(){
     
     
-    next:()=>{
+//     next:()=>{
             
-                done=this.start>this.end,
-                value = this.start>this.end? undefined:start++
+//                 done=this.start>this.end,
+//                 value = this.start>this.end? undefined:start++
         
         
-    }
- let next1=next()
-}
-}
+//     }
+
+// }
+// }
 
 
-let got=list[Symbol.iterator]()
-console.log(next(got.Symbol))
+// let got=list[Symbol.iterator]()
+// console.log(next(got.Symbol))
