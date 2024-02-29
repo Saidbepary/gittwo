@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link src="note.js">
+    <link src="note.js"> -->
     <script >
     let arr=[12,44,76]
 let y=arr[Symbol.iterator]()
@@ -12,6 +12,7 @@ console.log(y.next(),y.next)
 let result=y.next()
 while(!result.done){
     console.log(result.value)
+    result=y.next()
 }
     </script>
 </head>
