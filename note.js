@@ -156,3 +156,25 @@ console.log(newnum.next())
 
 // let got=list[Symbol.iterator]()
 // console.log(next(got.Symbol))
+function sum(...rest){
+    return rest.reduce((a,b)=>a+b)
+}
+console.log(sum(1,2,3,4,5))
+let g={
+    a:22,
+    b:44,
+    c:21
+}
+g[3]=6
+let g1={
+    ...g
+}
+console.log(g1)
+let number=[1,23,4]
+number.push(5)
+let r=[...number]
+console.log(r)
+function myfun(...pera){
+    console.log(pera)
+}
+console.log(myfun(3,5,7))
